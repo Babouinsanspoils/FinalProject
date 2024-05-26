@@ -1,14 +1,10 @@
 package org.yv;
 
 import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
 import lombok.ToString;
 
 @ToString
 @EqualsAndHashCode
-@Getter
-@Setter
 public class Department {
     private String departmentId;
     private String departmentName;
@@ -40,4 +36,27 @@ public class Department {
         }
     }
 
+    public String getDepartmentId() {
+        return departmentId;
+    }
+
+    public void setDepartmentId(String departmentId) {
+        this.departmentId = departmentId;
+    }
+
+    public String getDepartmentName() {
+        return departmentName;
+    }
+
+    public void setDepartmentName(String departmentName) {
+        this.departmentName = departmentName;
+    }
+
+    public static int getNextId() {
+        return nextId;
+    }
+
+    public static void setNextId(int nextId) {
+        Department.nextId = nextId;
+    }
 }
