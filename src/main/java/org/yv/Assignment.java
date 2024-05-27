@@ -13,6 +13,7 @@ public class Assignment {
     private ArrayList<Integer> scores;
     private static int nextId;
 
+
     // Calculate assignment average
     public void calcAssignmentAvg() {
         if (scores.isEmpty()) {

@@ -35,8 +35,7 @@ public class Student {
         }
 
         registeredCourses.add(course); // Add course to student's list
-        course.addStudent(this); // Add student to course's list
-        course.appendNullScores(this); // Append null scores for this student
+        course.registerStudent(this); // Add student to course's list
 
         return true;
     }
@@ -48,7 +47,6 @@ public class Student {
         }
 
         registeredCourses.remove(course); // Remove course from student's list
-        course.removeStudent(this); // Remove student from course's list
 
         return true;
     }
@@ -56,7 +54,7 @@ public class Student {
     // Simplified string representation
     public String toSimplifiedString() {
         return String.format("StudentId: %s, Name: %s, Department: %s",
-                studentId, studentName, department.getName());
+                studentId, studentName, department.getDepartmentName());
     }
 
     // String representation with details
@@ -66,7 +64,7 @@ public class Student {
                 "Name: " + studentName + "\n" +
                 "Gender: " + gender + "\n" +
                 "Address: " + address + "\n" +
-                "Department: " + department.getName() + "\n" +
+                "Department: " + department.getDepartmentName() + "\n" +
                 "Registered Courses: \n";
 
         for (Course course : registeredCourses) {

@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class TestAssignment {
 
     @Test
-    public void testcalcAssignmentAvg1() {
+    public void testCalcAssignmentAvg1() {
         Assignment assignment = new Assignment();
         assignment.setScore(80);
         assignment.setScore(90);
@@ -22,7 +22,7 @@ public class TestAssignment {
     }
 
     @Test
-    public void testcalcAssignmentAvg2() {
+    public void testCalcAssignmentAvg2() {
         Assignment assignment = new Assignment();
         assignment.setScore(70);
         assignment.setScore(85);
@@ -35,7 +35,7 @@ public class TestAssignment {
     }
 
     @Test
-    public void testcalcAssignmentAvg3() {
+    public void testCalcAssignmentAvg3() {
         Assignment assignment = new Assignment();
         assignment.setScore(80);
         assignment.setScore(90);
@@ -49,7 +49,20 @@ public class TestAssignment {
     }
 
     @Test
-    public void testcalcAssignmentAvg4() {
+    public void testCalcAssignmentAvg4() {
+        Assignment assignment = new Assignment();
+        assignment.setScore(0);
+        assignment.setScore(0);
+        assignment.setScore(0);
+        assignment.calcAssignmentAvg();
+        double expected = 0;
+        double result = assignment.getAssignmentAverage();
+        assignment.calcAssignmentAvg();
+        Assertions.assertEquals(expected, result);
+    }
+
+    @Test
+    public void testIsAssignmentsTotalWeightValid1() {
         Assignment assignment = new Assignment();
         assignment.setScore(0);
         assignment.setScore(0);
