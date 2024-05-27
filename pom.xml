@@ -19,5 +19,12 @@
         <artifactId>lombok</artifactId>
         <version>1.18.32</version>
         <scope>provided</scope>
-    </dependency></dependencies>
+    </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>

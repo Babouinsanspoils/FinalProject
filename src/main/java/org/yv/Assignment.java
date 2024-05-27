@@ -3,6 +3,7 @@ package org.yv;
 import java.util.ArrayList;
 import java.util.Random;
 
+
 public class Assignment {
     private String assignmentId;
     private String assignmentName;
@@ -52,5 +53,62 @@ public class Assignment {
     public String toString() {
         return String.format("AssignmentId: %s, AssignmentName: %s, Weight: %.2f, MaxScore: %d",
                 assignmentId, assignmentName, weight, maxScore);
+    }
+
+    // Clean up unnecessary code
+    public String getAssignmentId() {
+        return assignmentId;
+    }
+
+    public void setAssignmentId(String assignmentId) {
+        this.assignmentId = assignmentId;
+    }
+
+    public String getAssignmentName() {
+        return assignmentName;
+    }
+
+    public void setAssignmentName(String assignmentName) {
+        this.assignmentName = assignmentName;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public int getMaxScore() {
+        return maxScore;
+    }
+
+    public void setMaxScore(int maxScore) {
+        this.maxScore = maxScore;
+    }
+
+    public double getAssignmentAverage() {
+        return assignmentAverage;
+    }
+
+    public void setAssignmentAverage(double assignmentAverage) {
+        this.assignmentAverage = assignmentAverage;
+    }
+
+    public ArrayList<Integer> getScores() {
+        return scores;
+    }
+
+    public void setScores(ArrayList<Integer> scores) {
+        this.scores = scores;
+    }
+
+    public static int getNextId() {
+        return nextId;
+    }
+
+    public static void setNextId(int nextId) {
+        Assignment.nextId = nextId;
     }
 }
