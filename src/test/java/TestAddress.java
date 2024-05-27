@@ -5,7 +5,7 @@ import org.yv.Address;
 public class TestAddress {
 
     @Test
-    public void TestisPostalCodeValid1() {
+    public void testisPostalCodeValid1() {
         String postalCode = "H3R 1Z2";
         boolean expected = true;
         boolean result = Address.isPostalCodeValid(postalCode);
@@ -14,7 +14,7 @@ public class TestAddress {
     }
 
     @Test
-    public void TestisPostalCodeValid2() {
+    public void testisPostalCodeValid2() {
         String postalCode = "H3R1Z2";
         boolean expected = true;
         boolean result = Address.isPostalCodeValid(postalCode);
@@ -23,7 +23,7 @@ public class TestAddress {
     }
 
     @Test
-    public void TestisPostalCodeValid3() {
+    public void testisPostalCodeValid3() {
         String postalCode = "HR3 1Z2";
         boolean expected = false;
         boolean result = Address.isPostalCodeValid(postalCode);
@@ -32,7 +32,7 @@ public class TestAddress {
     }
 
     @Test
-    public void TestisPostalCodeValid4() {
+    public void testisPostalCodeValid4() {
         String postalCode = "HR31Z2";
         boolean expected = false;
         boolean result = Address.isPostalCodeValid(postalCode);
@@ -41,7 +41,7 @@ public class TestAddress {
     }
 
     @Test
-    public void TestisPostalCodeValid5() {
+    public void testisPostalCodeValid5() {
         String postalCode = "H3R 1Z";
         boolean expected = false;
         boolean result = Address.isPostalCodeValid(postalCode);
@@ -50,7 +50,7 @@ public class TestAddress {
     }
 
     @Test
-    public void TestisPostalCodeValid6() {
+    public void testisPostalCodeValid6() {
         String postalCode = " ";
         boolean expected = false;
         boolean result = Address.isPostalCodeValid(postalCode);
@@ -59,7 +59,7 @@ public class TestAddress {
     }
 
     @Test
-    public void TestisPostalCodeValid7() {
+    public void testisPostalCodeValid7() {
         String postalCode = "H3R 1Z2 ";
         boolean expected = false;
         boolean result = Address.isPostalCodeValid(postalCode);
@@ -68,7 +68,7 @@ public class TestAddress {
     }
 
     @Test
-    public void TestisPostalCodeValid8() {
+    public void testisPostalCodeValid8() {
         String postalCode = null;
         boolean expected = false;
         boolean result = Address.isPostalCodeValid(postalCode);
@@ -77,7 +77,7 @@ public class TestAddress {
     }
 
     @Test
-    public void TestisPostalCodeValid9() {
+    public void testisPostalCodeValid9() {
         String postalCode = "h3r 1z2";
         boolean expected = true;
         boolean result = Address.isPostalCodeValid(postalCode);
@@ -86,7 +86,7 @@ public class TestAddress {
     }
 
     @Test
-    public void TestisPostalCodeValid10() {
+    public void testisPostalCodeValid10() {
         String postalCode = "hr3 1z2";
         boolean expected = true;
         boolean result = Address.isPostalCodeValid(postalCode);

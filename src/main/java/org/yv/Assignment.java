@@ -111,4 +111,13 @@ public class Assignment {
     public static void setNextId(int nextId) {
         Assignment.nextId = nextId;
     }
+
+    // setter and getter for unit testing in TestAssignment
+    public void setScore(int score) {
+        scores.add(score);
+    }
+
+    public double getScore() {
+        return this.assignmentAverage;
+    }
 }
